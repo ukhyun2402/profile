@@ -29,15 +29,14 @@
     },2);
 
     let loading = TweenMax.to('#entrance',1, {
-        width:100vw,
-        height:100vh,
+        width:'100vw',
+        height:'100vh',
         paused:true,
     });
 
     let loadingModule = () => {
         loading.play();
         document.querySelector('.fa-dungeon').style.visibility = 'hidden';
-
 
     }
 </script>
