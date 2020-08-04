@@ -1,0 +1,51 @@
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    @include flexCenter();
+    flex-direction: column;
+    height: 100vh;
+    #circleContainer{
+        @include flexCenter();
+        #entrance{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: black;
+            cursor: pointer;
+            @include flexCenter();
+            *{
+                color: white;
+                font-size: 50px;
+            }
+        }
+        #entrance:hover{
+            background-color: red;
+        }
+        #entrance:hover ~ .circle{
+            background-color: red;
+        }
+        .circle{
+            z-index: -1;
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color:gray;
+        }
+    }
+    p{
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+}

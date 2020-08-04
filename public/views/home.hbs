@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    {{>FONTAWESOME}}
+    {{>GASP}}
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="circleContainer">
+            <div id="entrance" onclick="loadingModule()"> 
+               <i class="fas fa-dungeon"></i>
+            </div>
+            <div class='circle'></div> 
+        </div>
+        <p>Ha WookHyun</p>
+    </div>
+</body>
+<script>
+    TweenMax.to(".circle", 2, {
+        ease: Back.easeOut,
+        opacity:0,
+        scale: 2,
+        delay: 1,
+        repeat: -1,
+    },2);
+
+    let loading = TweenMax.to('#entrance',1, {
+        width:100vw,
+        height:100vh,
+        paused:true,
+    });
+
+    let loadingModule = () => {
+        loading.play();
+        document.querySelector('.fa-dungeon').style.visibility = 'hidden';
+
+
+    }
+</script>
+</html>

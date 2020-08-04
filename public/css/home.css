@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; }
+  #container #circleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #container #circleContainer #entrance {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: black;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #container #circleContainer #entrance * {
+        color: white;
+        font-size: 50px; }
+    #container #circleContainer #entrance:hover {
+      background-color: red; }
+    #container #circleContainer #entrance:hover ~ .circle {
+      background-color: red; }
+    #container #circleContainer .circle {
+      z-index: -1;
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: gray; }
+  #container p {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 23px; }
