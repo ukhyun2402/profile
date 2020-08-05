@@ -1,0 +1,23 @@
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+  body article {
+    -webkit-box-flex: 10;
+    -moz-box-flex: 10;
+    -webkit-flex-grow: 10;
+    -ms-flex: 10;
+    flex-grow: 10; }
+  body aside {
+    -webkit-box-flex: 0.5;
+    -moz-box-flex: 0.5;
+    -webkit-flex-grow: 0.5;
+    -ms-flex: 0.5;
+    flex-grow: 0.5; }

@@ -1,0 +1,60 @@
+aside {
+  position: relative;
+  margin: 50px 0; }
+  aside #profile-container {
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    aside #profile-container img {
+      margin: 0 auto;
+      border: 3px solid #5c5b5b;
+      padding: 1px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+      width: 200px;
+      position: relative;
+      z-index: 1; }
+    aside #profile-container .row {
+      text-align: -moz-center;
+      text-align: -webkit-center;
+      text-align: center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      font-size: 15px;
+      line-height: 160%; }
+    aside #profile-container .icon {
+      margin: 10px 0;
+      -webkit-box-pack: end;
+      -moz-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      font-size: 25px; }
+      aside #profile-container .icon i {
+        margin: 0 6px; }
+
+aside::before {
+  position: absolute;
+  content: '';
+  top: 10%;
+  height: 80%;
+  border-left: 2px solid #c8c8c8; }

@@ -1,0 +1,48 @@
+@import './scssHeader.scss';
+
+aside{
+    position: relative;
+    margin: 50px 0;
+    #profile-container{
+        padding: 0 30px;
+        @include flex();
+        @include flex-direction-vertical();
+        @include flex-justify(center);
+        
+        img{
+            margin: 0 auto;
+            border :3px solid rgb(92, 91, 91);
+            padding : 1px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            width: 200px;
+            
+            position: relative;
+            z-index: 1;
+        }
+        .row{
+            @include text-align();
+            @include flex();
+            @include flex-justify(space-between);
+            font-size: 15px;
+            line-height: 160%;
+        }
+        .icon{
+            margin: 10px 0;
+            @include flex-justify(flex-end);
+            font-size: 25px;
+            i{
+                margin: 0 6px;
+            }
+        }
+
+    }
+}
+
+aside::before{
+    position: absolute;
+    content: '';
+    top: 10%;
+    height: 80%;
+    border-left: 2px solid rgb(200,200,200);
+}

@@ -1,0 +1,13 @@
+@import './scssHeader.scss';
+
+body{
+    @include flex();
+    @include flex-justify();
+
+    article{
+        @include flex-grow(10);
+    }
+    aside{
+        @include flex-grow(0.5);
+    }
+}
