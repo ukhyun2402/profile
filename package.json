@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node index.js --ext hbs,js",
+    "dev": "nodemon index.js --ext hbs,js",
     "dev:scss": "nodemon --watch public/scss --ext scss --exec \"npm run build:scss\"",
     "build:scss": "node-sass-chokidar ./public/scss/ -o ./public/css --watch",
     "build:js": "npx babel --watch public/js -d public/dist/js & npm run build:scss"

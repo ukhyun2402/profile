@@ -3,21 +3,69 @@ body {
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  -ms-flex-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start; }
+  display: flex; }
   body article {
-    -webkit-box-flex: 10;
-    -moz-box-flex: 10;
-    -webkit-flex-grow: 10;
-    -ms-flex: 10;
-    flex-grow: 10; }
+    -webkit-box-flex: 2.5;
+    -moz-box-flex: 2.5;
+    -webkit-flex-grow: 2.5;
+    -ms-flex: 2.5;
+    flex-grow: 2.5; }
+    body article header h1 {
+      font-size: 50px;
+      text-align: center; }
+    body article #timeline {
+      position: relative;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center; }
+      body article #timeline .circle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #1d6daf;
+        border-radius: 50%;
+        border: 5px solid white;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        body article #timeline .circle i {
+          font-size: 50px;
+          color: white; }
+      body article #timeline .circlePulse {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #1d6daf;
+        border-radius: 50%;
+        z-index: -1; }
+      body article #timeline #line {
+        height: 600px;
+        margin-bottom: 20%; }
+        body article #timeline #line * {
+          background-color: #1d6daf;
+          width: 10px;
+          margin: 50px auto;
+          border-radius: 50px; }
   body aside {
-    -webkit-box-flex: 0.5;
-    -moz-box-flex: 0.5;
-    -webkit-flex-grow: 0.5;
-    -ms-flex: 0.5;
-    flex-grow: 0.5; }
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex: 1;
+    flex-grow: 1; }

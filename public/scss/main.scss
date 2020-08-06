@@ -2,12 +2,59 @@
 
 body{
     @include flex();
-    @include flex-justify();
 
     article{
-        @include flex-grow(10);
+        @include flex-grow(2.5);
+        header{
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+        }
+        #timeline{
+            // background-color: red;
+            position: relative;
+            @include flex();
+            @include flex-justify(center);
+            .circle{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: rgb(29, 109, 175);
+                border-radius: 50%;
+                border: 5px solid white;
+
+                @include flex();
+                @include flex-justify(center);
+                @include flex-align-items();
+                i{
+                    font-size: 50px;
+                    color: white;
+                }
+            }
+            .circlePulse{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: rgb(29, 109, 175);
+                border-radius: 50%;
+                z-index: -1;
+            }
+
+            #line{
+                height: 600px;
+                margin-bottom: 20%;
+                *{
+                    background-color: rgb(29, 109, 175);
+                    width: 10px;
+                    margin: 50px auto;
+                    border-radius: 50px;
+                }
+
+            }
+        }
     }
     aside{
-        @include flex-grow(0.5);
+        @include flex-grow(1);
     }
 }
